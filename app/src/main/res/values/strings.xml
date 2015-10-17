@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pushy</string>
+    <string name="loading">Registering your device...</string>
+    <string name="copyLogcat">(copy from logcat)</string>
+</resources>
