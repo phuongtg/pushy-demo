@@ -1,6 +1,7 @@
 package me.pushy.example;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -32,8 +33,11 @@ public class PushReceiver extends BroadcastReceiver
         // Dismisses when pressed
         notification.flags = Notification.FLAG_AUTO_CANCEL;
 
-        // Create pending intent that leads to nothing when clicked
-        notification.setLatestEventInfo(context, notificationTitle, notificationDesc, null );
+        // Set notification click intent
+        PendingIntent notificationIntent = PendingIntent.getActivity(context, 0, new Intent(context, Main.class), 0);
+
+        // Set title and desc
+        notification.setLatestEventInfo(context, notificationTitle, notificationDesc, notificationIntent );
 
         // Get notification manager
         NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);

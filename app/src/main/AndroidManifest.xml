@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.pushy.example" >
 
+	<!-- Demo Permissions -->
+	<uses-permission android:name="android.permission.VIBRATE" />
+
     <!-- Pushy Permissions -->
 
 	<!-- Added in Pushy SDK v1.0.0 -->
@@ -22,10 +25,11 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Main"
-            android:label="@string/app_name" >
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

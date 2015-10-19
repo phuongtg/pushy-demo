@@ -8,8 +8,8 @@ android {
         applicationId "me.pushy.example"
         minSdkVersion 7
         targetSdkVersion 22
-        versionCode 10030
-        versionName "1.0.3"
+        versionCode 10040
+        versionName "1.0.4"
     }
     buildTypes {
         release {
