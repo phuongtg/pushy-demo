@@ -18,10 +18,10 @@ https://pushy.me/
 * Open it with Android Studio
 * Run the demo on your phone
 * Copy the registration token
-* Send yourself a test push [here](https://pushy.me/docs/samples/android)
+* Send yourself a test push [here](https://app.pushy.me/docs/samples/android)
 
 # More Information
 
 * [Homepage](https://pushy.me/)
 * [Free trial](https://pushy.me/pricing)
-* [Documentation](https://pushy.me/docs)
+* [Documentation](https://app.pushy.me/docs)
