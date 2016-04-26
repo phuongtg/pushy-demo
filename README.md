@@ -1,8 +1,12 @@
 # Pushy Demo
+
 A demo of the Pushy SDK integrated into a sample Android app.
 
-* [Official Site](https://pushy.me/)
 * [Google Play Listing](https://play.google.com/store/apps/details?id=me.pushy.example)
+
+Pushy is the most reliable push notification gateway, perfect for real-time, mission-critical applications.
+
+https://pushy.me/
 
 # Screenshots
 
@@ -19,5 +23,5 @@ A demo of the Pushy SDK integrated into a sample Android app.
 # More Information
 
 * [Homepage](https://pushy.me/)
-* [Free trial](https://pushy.me/try)
+* [Free trial](https://pushy.me/pricing)
 * [Documentation](https://pushy.me/docs)
