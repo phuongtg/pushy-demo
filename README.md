@@ -1,12 +1,11 @@
-# Pushy Demo
+# pushy-demo
 
-A demo of the Pushy SDK integrated into a sample Android app.
+A demo of the [Pushy SDK](https://pushy.me/) integrated into a sample Android app.
 
+* [Demo Page](https://pushy.me/docs/resources/demo)
 * [Google Play Listing](https://play.google.com/store/apps/details?id=me.pushy.example)
 
-Pushy is the most reliable push notification gateway, perfect for real-time, mission-critical applications.
-
-https://pushy.me/
+> [Pushy](https://pushy.me/) is the most reliable push notification gateway, perfect for real-time, mission-critical applications.
 
 # Screenshots
 
@@ -16,12 +15,12 @@ https://pushy.me/
 
 * Clone the repo locally
 * Open it with Android Studio
-* Run the demo on your phone
-* Copy the registration token
-* Send yourself a test push [here](https://app.pushy.me/docs/samples/android)
+* Build and run the demo
+* Copy the registration ID
+* Visit the [demo page](https://pushy.me/docs/resources/demo) and send yourself a test notification
 
 # More Information
 
-* [Homepage](https://pushy.me/)
+* [Pushy](https://pushy.me/)
 * [Free trial](https://pushy.me/pricing)
-* [Documentation](https://app.pushy.me/docs)
+* [Documentation](https://pushy.me/docs)
