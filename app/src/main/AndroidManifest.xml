@@ -2,19 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.pushy.example" >
 
-	<!-- Demo Permissions -->
-	<uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Demo Notification Vibration -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <!-- Pushy Permissions -->
 
-	<!-- Added in Pushy SDK v1.0.0 -->
-	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.WAKE_LOCK" />
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
-	<!-- Added in Pushy SDK v1.0.1 -->
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Optional Permission: https://pushy.me/support#permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <!-- End Pushy Permissions -->
 
