@@ -3,27 +3,25 @@ package me.pushy.example;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
-import android.support.v7.app.AppCompatActivity;
 
 import me.pushy.sdk.Pushy;
 import me.pushy.sdk.exceptions.PushyException;
 
-public class Main extends AppCompatActivity
-{
+public class Main extends AppCompatActivity {
     TextView mRegistrationID;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Load activity_main.xml layout
         setContentView(R.layout.main);
 
         // Cache TextView object
-        mRegistrationID = (TextView)findViewById(R.id.registrationID);
+        mRegistrationID = (TextView) findViewById(R.id.registrationID);
 
         // Restart the socket service, in case the user force-closed
         Pushy.listen(this);
@@ -32,12 +30,10 @@ public class Main extends AppCompatActivity
         new RegisterForPushNotifications().execute();
     }
 
-    private class RegisterForPushNotifications extends AsyncTask<String, Void, String>
-    {
+    private class RegisterForPushNotifications extends AsyncTask<String, Void, String> {
         ProgressDialog mLoading;
 
-        public RegisterForPushNotifications()
-        {
+        public RegisterForPushNotifications() {
             // Create progress dialog and set it up
             mLoading = new ProgressDialog(Main.this);
             mLoading.setMessage(getString(R.string.loading));
@@ -48,18 +44,15 @@ public class Main extends AppCompatActivity
         }
 
         @Override
-        protected String doInBackground(String... params)
-        {
+        protected String doInBackground(String... params) {
             // Temporary string that will hold the registration result
             String result;
 
-            try
-            {
+            try {
                 // Get registration ID via Pushy
                 result = Pushy.register(Main.this);
             }
-            catch (PushyException exc)
-            {
+            catch (PushyException exc) {
                 // Show error instead
                 result = exc.getMessage();
             }
@@ -72,11 +65,9 @@ public class Main extends AppCompatActivity
         }
 
         @Override
-        protected void onPostExecute(String result)
-        {
+        protected void onPostExecute(String result) {
             // Activity died?
-            if ( isFinishing() )
-            {
+            if (isFinishing()) {
                 return;
             }
 

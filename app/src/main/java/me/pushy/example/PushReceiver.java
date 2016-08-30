@@ -1,4 +1,5 @@
 package me.pushy.example;
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -6,11 +7,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-public class PushReceiver extends BroadcastReceiver
-{
+public class PushReceiver extends BroadcastReceiver {
     @Override
-    public void onReceive(Context context, Intent intent)
-    {
+    public void onReceive(Context context, Intent intent) {
         // Create a test notification
         // (Use deprecated notification API for demonstration
         // purposes, to avoid having to import AppCompat into your project)
@@ -19,8 +18,7 @@ public class PushReceiver extends BroadcastReceiver
         String notificationDesc = "Test notification";
 
         // Attempt to grab the message property from the payload
-        if ( intent.getStringExtra("message") != null )
-        {
+        if (intent.getStringExtra("message") != null) {
             notificationDesc = intent.getStringExtra("message");
         }
 
@@ -37,7 +35,7 @@ public class PushReceiver extends BroadcastReceiver
         PendingIntent notificationIntent = PendingIntent.getActivity(context, 0, new Intent(context, Main.class), 0);
 
         // Set title and desc
-        notification.setLatestEventInfo(context, notificationTitle, notificationDesc, notificationIntent );
+        notification.setLatestEventInfo(context, notificationTitle, notificationDesc, notificationIntent);
 
         // Get notification manager
         NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
