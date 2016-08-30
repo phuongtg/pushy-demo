@@ -20,9 +20,6 @@ android {
 }
 
 dependencies {
-    // AppCompat v7 Dependency
-    compile 'com.android.support:appcompat-v7:22.1.0'
-
     // Pushy SDK
     compile 'me.pushy:sdk:1.0.10'
 
@@ -33,6 +30,6 @@ dependencies {
             [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.2.3']
     )
 
-    // All .jar files in ./libs
+    compile 'com.android.support:appcompat-v7:22.1.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
