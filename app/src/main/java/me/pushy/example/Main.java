@@ -8,7 +8,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 import me.pushy.sdk.Pushy;
-import me.pushy.sdk.exceptions.PushyException;
+import me.pushy.sdk.util.exceptions.PushyException;
 
 public class Main extends AppCompatActivity {
     TextView mRegistrationID;
